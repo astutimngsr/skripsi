@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>HTML to PDF Eample</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js" integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg==" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <button<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> class="btn btn-success" onclick="generatePDF()">Download as PDF</button>
+    <div id="invoice">
+        <div>
+            <div style="color: blue; background-color: red;">LEMBAR</div>
+            <div>HASIL PENILAIAN SEJAWAT SEBIDANG ATAU PEER REVIEW</div>
+            <div>KARYA ILMIAH : PROSIDING</div>
+        </div>
+        <div>
+            <div>
+                <div>Judul karya ilmiah (paper)</div>
+                <div>: ...</div>
+            </div>
+            <div>
+                <div>Jumlah Penulis</div>
+                <div>: .... orang</div>
+            </div>
+            <div>
+                <div>Status Pengusul</div>
+                <div>: Penulis pertana/penulis ke ...</div>
+            </div>
+            <div>
+                <div>Identitas Makalah</div>
+                <div>
+                    <div>
+                        <div>a. Judul Prosiding Jurnal</div>
+                        <div>: nilai</div>
+                    </div>
+                    <div>
+                        <div>b. ISBNN/ISNN</div>
+                        <div>: nilai</div>
+                    </div>
+                    <div>
+                        <div>c. Tahun Terbit, Tempat Pelaksanaan</div>
+                        <div>: nilai</div>
+                    </div>
+                    <div>
+                        <div>d. Penerbit/organiser</div>
+                        <div>: nilai</div>
+                    </div>
+                    <div>
+                        <div>e. Alamat web prosiding</div>
+                        <div>: nilai</div>
+                    </div>
+                    <div>
+                        <div>f. Jumlah Halaman</div>
+                        <div>: nilai</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>Kategori Publikasi Ilmiah</div>
+                <div>
+                    <div>
+                        <div>..</div>
+                        <div>: Prosiding Forum Ilmiah Internasional</div>
+                    </div>
+                    <div>
+                        <div>..</div>
+                        <div>Prosiding Forum Ilmiah Nasional</div>
+                    </div>
+                </div>
+            </div>
+            <div>Hasil Penilaian Validasi</div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>Komponen Yang Dinilai</td>
+                            <td>Nilai Maksimal Prosiding</td>
+                            <td>Internasional</td>
+                            <td>Nasional</td>
+                            <td>Nilai Yang Akhir Diperoleh</td>
+                        </tr>
+                        <tr>
+                            <td>a. Kelengkapan unsur isi buku (10%)</td>
+                            <td>..</td>
+                            <td>..</td>
+                            <td>..</td>
+                        </tr>
+                        <tr>
+                            <td>b. Ruang lingkup dan pembahasan (30%)</td>
+                            <td>..</td>
+                            <td>..</td>
+                            <td>..</td>
+                        </tr>
+                        <tr>
+                            <td>c. Kecukupan dan kemuktahiran data/informasi dan metodologi (30%)</td>
+                            <td>..</td>
+                            <td>..</td>
+                            <td>..</td>
+                        </tr>
+                        <tr>
+                            <td>d. Kelengkapan unsur dan kualitas penerbit (30%)</td>
+                            <td>..</td>
+                            <td>..</td>
+                            <td>..</td>
+                        </tr>
+                        <tr>
+                            <td>Total = (100%)</td>
+                            <td>..</td>
+                            <td>..</td>
+                            <td>..</td>
+                        </tr>
+                        <tr>
+                            <td>Nilai Pengusul =</td>
+                        </tr>
+                    </table>
+                    <div>
+                        <div>Catatan penilaian paper oleh Reviewer: </div>
+                    </div>
+                </div>
+                <div>
+                    <div>Makassar,</div>
+                    <div>Reviewer 1</div>
+                    <div>.........</div>
+                    <div>NIP</div>
+                    <div>.........</div>
+                    <div>
+                        <div>Unit Kerja</div>
+                        <div>: Fak. Teknik Dep.</div>
+                    </div>
+                </div>
+            <div>
+    </div>
+
+    <script>
+        function generatePDF() {
+          // Choose the element that our invoice is rendered in.
+          let element = document.getElementById("invoice");
+          // Choose the element and save the PDF for our user.
+          html2pdf(element)
+            // .from(element)
+            // .save();
+        }
+      </script>
+</body>
+</html>
