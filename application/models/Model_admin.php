@@ -70,6 +70,20 @@ Class Model_admin extends CI_Model{
         // die();
         return $admin;
     }
+
+    function getIdPenilaiFromTimPenilai($idpublikasi, $id_admin){
+
+        $where = array(
+            'id_tim_penilai' => $id_admin,
+            'idpublikasi' => $idpublikasi,
+        );
+        $this->db->select();
+        $this->db->from('penilaian_karya_ilmiah');
+        $this->db->join('tim_penilai', 'tim_penilai.id_penilai = penilaian_karya_ilmiah.id_tim_penilai AND tim_penilai.id_publikasi = penilaian_karya_ilmiah.idpublikasi');
+        $this->db->where($where);
+        $timPenilai = $this->db->get()->row();
+        return $timPenilai;
+    }
     
     function getDataJurnal($id){
         $this->db->where('idpublikasi', $id);
