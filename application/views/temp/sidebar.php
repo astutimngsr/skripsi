@@ -193,8 +193,9 @@
             <h6 class="collapse-header">Sub menu Karya Ilmiah :</h6>
             <!-- <a class="collapse-item" href="#">Dosen</a>
             <a class="collapse-item" href="#">Ketua Tim Penilai</a> -->
-            <a class="collapse-item" href="<?php echo base_url('dosen/karyailmiah') ?>">Data Turnitin</a>
-            <a class="collapse-item" href="<?php echo base_url('dosen/karyaIlmiahlokal') ?>">Data Lokal</a>
+            <a class="collapse-item" href="<?php echo base_url('dosen/karyaIlmiahlokal') ?>">Input Data Baru</a>
+            <a class="collapse-item" href="<?php echo base_url('dosen/karyailmiah') ?>">Import Data Dari Turnitin <br> </a>
+            
           </div>
         </div>
       </li>

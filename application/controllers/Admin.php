@@ -701,7 +701,7 @@ class Admin extends CI_Controller {
 	{
 		$ambilDataPenilai = $this->Model_admin->getDataPenilai($this->uri->segment(3, 0));
 		$ambilDataJurnal = $this->Model_admin->getDataJurnal($id);
-		$ambilNilaiJurnal = $this->Model_admin->getPenilaian($id, $this->session->userdata('nip'));
+		$ambilNilaiJurnal = $this->Model_admin->getIdPenilaiFromTimPenilai($id, $this->session->userdata('nip'));
 		$data['dataPenilai'] = $ambilDataPenilai; 
 		$data['dataJurnal'] = $ambilDataJurnal; 
 		$data['ambilNilaiJurnal'] = $ambilNilaiJurnal; 
@@ -721,7 +721,7 @@ class Admin extends CI_Controller {
 	{
 		$ambilDataPenilai = $this->Model_admin->getDataPenilai($this->uri->segment(3, 0));
 		$ambilDataJurnal = $this->Model_admin->getDataJurnal($id);
-		$ambilNilaiJurnal = $this->Model_admin->getPenilaian($id, $this->session->userdata('nip'));
+		$ambilNilaiJurnal = $this->Model_admin->getIdPenilaiFromTimPenilai($id, $this->session->userdata('nip'));
 
 		// echo '<pre>';
 		// echo var_dump($ambilDataJurnal);
@@ -740,13 +740,13 @@ class Admin extends CI_Controller {
 	{
 		$ambilDataPenilai = $this->Model_admin->getDataPenilai($this->uri->segment(3, 0));
 		$ambilDataJurnal = $this->Model_admin->getDataJurnal($id);
-		$ambilNilaiJurnal = $this->Model_admin->getPenilaian($id, $this->session->userdata('nip'));
+		$ambilNilaiJurnal = $this->Model_admin->getIdPenilaiFromTimPenilai($id, $this->session->userdata('nip'));
 
 		$data['dataPenilai'] = $ambilDataPenilai; 
 		$data['dataJurnal'] = $ambilDataJurnal; 
 		$data['ambilNilaiJurnal'] = $ambilNilaiJurnal; 
 		// echo '<pre>';
-		// echo var_dump($data);
+		// echo var_dump($ambilNilaiJurnal);
 		// echo '</pre>';
 		// die();
 		$this->load->view('temp/header');

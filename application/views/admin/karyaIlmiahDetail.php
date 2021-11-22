@@ -473,9 +473,9 @@
                             <td class="pb-2">
                             <?php
                                 if ($data->lokal_turnitin == 1) {
-                                echo 'Data lokal';
+                                echo 'Inputan Data Baru';
                                 } else {
-                                echo 'Data turnitin';
+                                echo 'Import Data Dari Turnitin';
                                 }
                             ?>  
                             </td>
@@ -595,9 +595,9 @@
                                 <td class="pb-2">
                                 <?php
                                     if ($data->lokal_turnitin == 1) {
-                                    echo 'Data lokal';
+                                    echo 'Inputan Data Baru';
                                     } else {
-                                    echo 'turnitin';
+                                    echo 'Import Data Dari Turnitin';
                                     }
                                 ?>  
                                 </td>
@@ -709,9 +709,9 @@
                             <td class="pb-2">
                             <?php
                                 if ($data->lokal_turnitin == 1) {
-                                echo 'Data lokal';
+                                echo 'Inputan Data Baru';
                                 } else {
-                                echo 'Data turnitin';
+                                echo 'Import Data Dari Turnitin';
                                 }
                             ?>  
                             </td>

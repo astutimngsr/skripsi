@@ -7,7 +7,7 @@
 <div class="container-fluid">
 
 <div class="alert alert-info" role="alert">
-  <i class="fa fa-server"></i> Tabel Karya Ilmiah <strong>Data Turnitin</strong>
+  <i class="fa fa-server"></i> Tabel Karya Ilmiah <strong>Import Data Dari Turnitin</strong>
 </div>
 
   <a href="<?php echo base_url('Dosen/updatekaryailmiah/') ?>" type="button" class="btn btn-info" style="font-size: 15px;">

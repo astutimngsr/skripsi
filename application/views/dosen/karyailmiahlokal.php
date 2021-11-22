@@ -7,7 +7,7 @@
 <div class="container-fluid">
 
 <div class="alert alert-info" role="alert">
-  <i class="fa fa-database"></i> Tabel Karya Ilmiah <strong>Data Lokal</strong>
+  <i class="fa fa-database"></i> Tabel Karya Ilmiah 
 </div>
 
 

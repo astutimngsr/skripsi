@@ -46,6 +46,7 @@
                     <div class="form-group">
                       <label>Nilai</label>
                       <input min="0" max="100" onkeyup=enforceMinMax(this) name="penilaian_kelengkapan_buku" type="number" class="form-control" value="<?= $ambilNilaiJurnal->penilaian_kelengkapan_buku ?>">
+                      <label style="font-size: 12px;">Ket : hanya dapat menginput nilai dari 0 sampai 100</label>
                     </div>
                   </div>
                    <!-- nilai akhir -->
@@ -68,6 +69,7 @@
                     <div class="form-group">
                       <label>Nilai</label>
                       <input min="0" max="100" onkeyup=enforceMinMax(this) name="penilaian_ruang_lingkup_buku" type="number" class="form-control" value="<?= $ambilNilaiJurnal->penilaian_ruang_lingkup_buku ?>">
+                      <label style="font-size: 12px;">Ket : hanya dapat menginput nilai dari 0 sampai 100</label>
                     </div>
                   </div>
                   <!-- nilai akhir -->
@@ -91,6 +93,7 @@
                     <div class="form-group">
                       <label>Nilai</label>
                       <input min="0" max="100" onkeyup=enforceMinMax(this) name="penilaian_kecukupan_buku" type="number" class="form-control" value="<?= $ambilNilaiJurnal->penilaian_kecukupan_buku ?>">
+                      <label style="font-size: 12px;">Ket : hanya dapat menginput nilai dari 0 sampai 100</label>
                     </div>
                   </div>
                   <!-- nilai akhir -->
@@ -113,6 +116,7 @@
                     <div class="form-group">
                       <label>Nilai</label>
                       <input min="0" max="100" onkeyup=enforceMinMax(this) name="penilaian_kualitas_penerbit_buku" type="number" class="form-control" value="<?= $ambilNilaiJurnal->penilaian_kualitas_penerbit_buku ?>">
+                      <label style="font-size: 12px;">Ket : hanya dapat menginput nilai dari 0 sampai 100</label>
                     </div>
                   </div>
                   <!-- nilai akhir --> 
@@ -133,7 +137,8 @@
                   <div class="card-body">
                     <div class="form-group">
                       <label>Nilai</label>
-                      <input name="penilaian_total_buku" type="number" class="form-control" value="<?= $ambilNilaiJurnal->penilaian_total_buku ?>">
+                      <input min="0" max="100" onkeyup=enforceMinMax(this) name="penilaian_total_buku" type="number" class="form-control" value="<?= $ambilNilaiJurnal->penilaian_total_buku?>">
+                      <label style="font-size: 12px;">Ket : hanya dapat menginput nilai dari 0 sampai 100</label>
                     </div>
                   </div>
                   <!-- nilai akhir --> 
